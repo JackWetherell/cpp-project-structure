@@ -1,27 +1,19 @@
 	.file	"other.cpp"
 	.text
 .Ltext0:
+	.p2align 4
 	.globl	_Z3addii
 	.type	_Z3addii, @function
 _Z3addii:
+.LVL0:
 .LFB0:
 	.file 1 "src/other.cpp"
-	.loc 1 5 1
+	.loc 1 5 1 view -0
 	.cfi_startproc
-	pushq	%rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
-	movq	%rsp, %rbp
-	.cfi_def_cfa_register 6
-	movl	%edi, -4(%rbp)
-	movl	%esi, -8(%rbp)
-	.loc 1 6 16
-	movl	-4(%rbp), %edx
-	movl	-8(%rbp), %eax
-	addl	%edx, %eax
-	.loc 1 7 1
-	popq	%rbp
-	.cfi_def_cfa 7, 8
+	.loc 1 6 5 view .LVU1
+	.loc 1 6 16 is_stmt 0 view .LVU2
+	leal	(%rdi,%rsi), %eax
+	.loc 1 7 1 view .LVU3
 	ret
 	.cfi_endproc
 .LFE0:
@@ -29,7 +21,7 @@ _Z3addii:
 .Letext0:
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.long	0x6f
+	.long	0x6d
 	.value	0x5
 	.byte	0x1
 	.byte	0x8
@@ -48,26 +40,24 @@ _Z3addii:
 	.byte	0x4
 	.byte	0x5
 	.long	.LASF3
-	.long	0x6b
+	.long	0x69
 	.quad	.LFB0
 	.quad	.LFE0-.LFB0
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x6b
+	.long	0x69
 	.uleb128 0x1
 	.string	"a"
 	.byte	0xd
-	.long	0x6b
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -20
+	.long	0x69
+	.uleb128 0x1
+	.byte	0x55
 	.uleb128 0x1
 	.string	"b"
 	.byte	0x14
-	.long	0x6b
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -24
+	.long	0x69
+	.uleb128 0x1
+	.byte	0x54
 	.byte	0
 	.uleb128 0x4
 	.byte	0x4
@@ -174,7 +164,7 @@ _Z3addii:
 .LASF3:
 	.string	"_Z3addii"
 .LASF2:
-	.string	"GNU C++17 11.1.0 -mtune=generic -march=x86-64 -g"
+	.string	"GNU C++17 11.1.0 -mtune=generic -march=x86-64 -g -O3"
 	.section	.debug_line_str,"MS",@progbits,1
 .LASF0:
 	.string	"src/other.cpp"
