@@ -1,38 +1,31 @@
-cpp-project-structure
+#cpp-project-structure
 =====================
 
 Project description
 
 Project image/gif
 
-# Requirements
---------------
+## Requirements
 
 Requirements
 
-# Installation
---------------
+## Installation
 
 `make`
 
-# Usage
--------
+## Usage
 
 `bin/run`
 
-# Example
----------
+## Example
 
 `bin/run`
 
-# Documentation
----------------
+## Documentation
 
 Location of Documentation
 
-
-# Directory structure
-----------------------
+## Directory structure
 ```
 .
 |-- Makefile           <- Project makefile
