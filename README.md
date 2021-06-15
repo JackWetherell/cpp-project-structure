@@ -1,5 +1,4 @@
 # cpp-project-structure
-=====================
 
 Project description
 
